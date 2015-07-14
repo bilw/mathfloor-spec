@@ -6,11 +6,11 @@ var RoundDown = {
         this._number = number;
         return this;
     },
-    number: function() {
+    numberToRound: function() {
         return this._number;
     },
     roundIt: function() {
-        return Math.floor(this.number());
+        return Math.floor(this.numberToRound());
     }
 };
 

@@ -7,11 +7,11 @@ describe('RoundDown', function() {
         expect(RoundDown).toBeDefined();
     });
     it('should use a number to round with', function() {
-        var round = RoundDown.create(4.59);
-        expect(round.number()).toEqual(4.59);
+        var round = RoundDown.create(5.59);
+        expect(round.numberToRound()).toEqual(5.59);
     });
     it('should round down to nearest integer', function() {
-        var round = RoundDown.create(4.5);
-        expect(round.roundIt()).toEqual(round.number());
+        var round = RoundDown.create(4);
+        expect(round.roundIt()).toEqual(round.numberToRound());
     });
 });
