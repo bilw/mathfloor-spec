@@ -3,15 +3,15 @@
 var RoundDown = require("../app/RoundDown");
 
 describe('RoundDown', function() {
-    it('should exist', function() {
+    it('exists', function() {
         expect(RoundDown).toBeDefined();
     });
     it('should use a number to round with', function() {
-        var round = RoundDown.create(5.59);
-        expect(round.numberToRound()).toEqual(5.59);
+        var round = RoundDown.create(9.833);
+        expect(round.numberToRound()).toEqual(9.833);
     });
     it('should round down to nearest integer', function() {
-        var round = RoundDown.create(4);
-        expect(round.roundIt()).toEqual(round.numberToRound());
+        var round = RoundDown.create(5.675);
+        expect(round.roundIt()).toEqual(5);
     });
 });
